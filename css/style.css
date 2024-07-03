@@ -27,7 +27,6 @@ html {
 
 }
 
-/* intro styles */
 
 
 body {
@@ -53,6 +52,35 @@ a:hover {
     text-decoration: none;
     color: var(--mutedpurple);
 }
+
+
+/* Inline elements like a, don't take effect from margin. */
+.button {
+    color: white;
+    background-color: var(--magenta);
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 5px;
+    font-family: var(--mono);
+}
+
+.gradient {
+    background: #3494E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EC6EAD, #3494E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 2px;
+
+}
+
+.button:hover {
+    background-color: var(--hotmag);
+    color: white;
+}
+
+/* intro styles */
 
 #intro .name {
     font-family: var(--mono);
@@ -81,4 +109,24 @@ a:hover {
     padding-bottom: 10rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+
+/* Contact Styles */
+
+#section-plum {
+    background-color: var(--plum);
+}
+
+#contact {
+    text-align: center;
+    width: 400px;
+    /* Two ways to make it center. 1: */
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+
+#contact p:last-child {
+    margin-top: 3rem;
 }
